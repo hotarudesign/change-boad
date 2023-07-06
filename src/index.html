@@ -10,6 +10,12 @@
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
     <meta property="og:image" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/base/reset.css" />
     <link rel="stylesheet" href="./assets/css/base/common.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -18,7 +24,7 @@
   <body>
     <header class="header">
       <div class="header__inner inner">
-        <h1 class="logo">RECRUIT</h1>
+        <h1 class="header__logo">RECRUIT</h1>
         <nav class="g-nav">
           <ul class="g-nav__list">
             <li class="g-nav__list-item"><a href="">TSJだからできること</a></li>
@@ -32,27 +38,29 @@
     <main>
       <section class="board">
         <div class="board__inner">
-          <div class="board__item">
-            <p class="board__item__txt">
-              このような絶景を<br />自分の目で確かめてみたいものですよね。
-            </p>
-            <button class="board__item__next-btn">次へ</button>
-            <button class="board__item__skip-btn">SKIP >></button>
+          <div class="board__item is-active">
+            <div class="board__item__main">
+              <p class="board__item__txt">
+                このような絶景を<br />自分の目で確かめてみたいものですよね。
+              </p>
+            </div>
           </div>
           <div class="board__item">
-            <p class="board__item__txt">
-              旅行業に従事しながら、自由に旅する夢を諦めない。
-            </p>
-            <button class="board__item__next-btn">次へ</button>
-            <button class="board__item__skip-btn">SKIP >></button>
+            <div class="board__item__main">
+              <p class="board__item__txt">
+                旅行業に従事しながら、自由に旅する夢を諦めない。
+              </p>
+            </div>
           </div>
           <div class="board__item">
-            <p class="board__item__txt">
-              当社は働くあなたの充実を第一に考えて、<br />採用活動を行なっております。
-            </p>
-            <button class="board__item__next-btn">次へ</button>
-            <button class="board__item__skip-btn">SKIP >></button>
+            <div class="board__item__main">
+              <p class="board__item__txt">
+                当社は働くあなたの充実を第一に考えて、<br />採用活動を行なっております。
+              </p>
+            </div>
           </div>
+          <button class="board__next-btn">次へ</button>
+          <button class="board__skip-btn">SKIP >></button>
         </div>
       </section>
     </main>

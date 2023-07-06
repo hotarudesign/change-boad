@@ -1,3 +1,29 @@
 @use "./base/variable" as v;
 .header {
+  padding: 4px 0;
+  background: rgb(1, 158, 142);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    font-weight: 900;
+    font-size: 4rem;
+    color: #fff;
+  }
+  .g-nav {
+    &__list {
+      display: flex;
+      justify-content: flex-end;
+      &-item {
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: #fff;
+        &:not(:last-child) {
+          margin: 0 20px 0 0;
+        }
+      }
+    }
+  }
 }

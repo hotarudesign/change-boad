@@ -1,0 +1,48 @@
+@use "./base/variable" as v;
+.board {
+  padding: 12% 0 0;
+  height: 100vh;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__next-btn {
+    display: block;
+    margin: 40px auto 0;
+    padding: 8px 0;
+    width: 140px;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(1, 158, 142);
+    background: #fff;
+    border: 1px solid rgb(1, 158, 142);
+    border-radius: 50px;
+  }
+  &__skip-btn {
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__item {
+    display: none;
+    text-align: center;
+    &.is-active {
+      display: block;
+    }
+    &__main {
+      width: 100%;
+    }
+    &__txt {
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 1.5;
+      color: #fff;
+    }
+  }
+}

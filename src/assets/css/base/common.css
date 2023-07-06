@@ -7,7 +7,12 @@ img {
   height: auto;
 }
 
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 .inner {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 4%;
 }
